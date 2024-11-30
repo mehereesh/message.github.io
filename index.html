@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Reveal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .reveal-button {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .reveal-button:hover {
+            background-color: #005f8a;
+        }
+     .letter {
+    display: none;
+    padding: 20px;
+    color: #333;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(155, 126, 255, 0.4)),
+                url('https://res.cloudinary.com/dpe4zyaxf/image/upload/v1733000923/WhatsApp_Image_2024-12-01_at_02.37.47_ee214258_s7kf23.jpg') 
+                no-repeat center center;
+    background-size: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+        .letter p{
+          color: white
+          ;
+          font-size:20px ;
+        }
+        .whatsapp-button {
+            display: none; /* Hidden initially */
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #25D366;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            background-color: #1ebc56;
+        }
+    </style>
+</head>
+<body>
+  <h3 style="text-align:center; color: red">
+    To,
+    <br>My Love</br>
+    <b>Mounika Open here ❤️❤️‍🩹</b>
+  </h3>    <button class="reveal-button" id="revealButton">See the Message</button>
+    <div class="letter" id="letter">
+        <p>Hey dear,</p>
+<br>
+      <h2> Any spelling mistakes means sorry I did this in flow</h2>
+        <p>
+            It looks like a picture and a pose for photo, but the smile in my face came from your happy face, and that makes me smile always, dear.
+        </p>
+        <p>
+           This show my future  My happiness and my life. I want our future to be the same after five years with a license.
+            I have two things: 1. For your happiness I'm ready to give anything for you to keep happy.<br>
+            2. I want to be with you in that happiness.
+        </p>
+        <p>
+            I have confidence that I can take care of you because I have seen everything in my life. I've seen lakhs
+            that are equal to my family's one-year income in just four months and lost it all to minus four lakhs,
+            but I never gave up. I stood back, and I'll do even more for you to keep you happy.
+        </p>
+        <p>
+            I believe destiny brought us together, like the blessing that was randomly said in Meenakshi Amma temple.
+        </p>
+        <p>
+            I promise you're the only girl in my future. In any situation, I am yours, and you are my life.
+            I will always keep you happy and smiling, dear.
+        </p>
+        <p>
+            I love you, Bangaram, and I am lucky and blessed to have you ❤️❤️❤️‍🩹🥹
+        </p>
+    </div>
+
+
+
+    <script>
+        const revealButton = document.getElementById('revealButton');
+        const letter = document.getElementById('letter');
+        const whatsappButton = document.getElementById('whatsappButton');
+
+        revealButton.addEventListener('click', () => {
+            revealButton.style.display = 'none'; // Hide the "See the Message" button
+            letter.style.display = 'block'; // Show the letter
+            whatsappButton.style.display = 'block'; // Show the WhatsApp button
+        });
+    </script>
+</body>
+</html>
